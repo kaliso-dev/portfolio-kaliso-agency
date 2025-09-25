@@ -32,6 +32,7 @@
     <style>
         body {
             font-family: "Unbounded", sans-serif;
+            background-color: #f5f5f5;
         }
     </style>
     <link rel="stylesheet" href="style.css">
@@ -3194,6 +3195,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 </script>
+
+
+<script>
+    function sendHeight() {
+  const height = document.body.scrollHeight;
+  window.parent.postMessage({ height }, '*');
+}
+
+// Envoi initial et à chaque resize du contenu
+sendHeight();
+window.addEventListener('resize', sendHeight);
+</script>
+
 
 </body>
 
