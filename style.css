@@ -2,6 +2,8 @@
 
 body {
     box-sizing: border-box;
+    overflow: hidden;
+
 }
 
 .hero-span {
@@ -245,6 +247,9 @@ body {
 .portfolio_head_wrap {
     margin-top: 20px !important;
 }
+
+  
+
 
 @media (max-width: 768px) {
   .tag-container {
